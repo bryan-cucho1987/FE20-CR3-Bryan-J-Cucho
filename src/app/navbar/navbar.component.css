@@ -1,0 +1,48 @@
+* {
+    padding: 4px;
+
+}
+
+.navbar-brand {
+    margin-left: 5px;
+    gap: 10px;
+}
+
+.form-control {
+    margin-top: 5px;
+    margin-left: 10px;
+    border-radius: 3px;
+    width: 580px;
+}
+
+.btn {
+    color: whitesmoke;
+    border-radius: 25px;
+    outline-color: brown;
+    background-color: green;
+}
+
+.card-top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background: rgba(255, 166, 0, 0.637)e;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: .25rem;
+
+}
+
+.item {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-left: 155px;
+    padding-top: 10px;
+}
+
+.fas {
+    padding-top: 8px;
+}

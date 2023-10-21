@@ -1,0 +1,17 @@
+<div class="container">
+    <h1>Details</h1>
+    <div class="card">
+        <img src={{product.image}} class="card-img-top" alt={{product.name}}>
+        <div class="card-body">
+            <h5 class="card-title"> {{product.name}}</h5>
+            <p class="card-text"><strong>Description:</strong><em> {{product.description}}</em></p>
+            <p class="card-text"><strong>Price:</strong> {{product.price}}</p>
+            <p class="card-text"><strong>Type: </strong><em>{{product.category}}</em></p>
+            <button (click)="addToCart()">Add To cart</button>
+            <button class="btn btn-outline-successs" style="font-size:14px;" class="fas fa-cart-plus"
+                class="badge bg-danger" routerLink="/cart">Check out</button>
+            <i style="font-size:30px;" class="fas fa-cart-plus"></i>
+        </div>
+        <hr />
+    </div>
+</div>

@@ -1,0 +1,52 @@
+<div class="container">
+    <div *ngFor="let val of cart">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col"><strong>Price</strong></th>
+                    <th scope="col"><strong>Type</strong></th>
+                    <th scope="col"><strong>Item</strong></th>
+
+
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{val.price}} € </td>
+                    <td>{{val.category}}</td>
+                    <td>{{val.name}}</td>
+
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p><strong>Total = {{ total }} €</strong></p>
+</div>
+
+<hr />
+
+<br>
+
+<br>
+<div class="formular">
+    <form FormGroup="checkoutForm" (ngSubmit)="onSubmit()">
+        <div class="containerName">
+            <label for="name"><strong> Name: </strong></label><br>
+            <input id="name" type="text" formControlName="name">
+        </div>
+        <div class="containerName">
+            <hr />
+            <label for="address"> <strong> Address: </strong> </label><br>
+            <input id="address" type="text" formControlName="address">
+        </div>
+        <div class="containerName">
+            <hr />
+            <label for="address"> <strong> Email: </strong> </label><br>
+            <input id="email" type="text" formControlName="email">
+        </div>
+        <br>
+        <button class="button" type="submit"> Purchase </button>
+    </form>
+</div>

@@ -1,0 +1,11 @@
+<div class="container">
+    <h1>GALLERY</h1>
+    <div *ngFor="let val of Arrproduct">
+        <div class="card">
+            <img src={{val.image}} class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{val.name}}</h5>
+            </div>
+        </div>
+    </div>
+</div>

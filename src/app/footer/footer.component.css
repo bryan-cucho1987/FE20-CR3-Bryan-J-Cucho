@@ -1,0 +1,31 @@
+.card ul li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding-right: 30px;
+}
+
+.card ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    background-color: aliceblue;
+    border-right: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 30px;
+}
+
+.btn {
+    border-radius: 30px;
+    background-color: green;
+    color: whitesmoke;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}

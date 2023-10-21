@@ -1,0 +1,17 @@
+<div class="container row row-cols-3">
+    <div class="cards" *ngFor="let val of Arrproduct; index as i">
+        <img src={{val.image}}>
+        <h4><strong>{{val.name}}</strong></h4>
+        <hr />
+        <p><strong>Price:</strong>{{val.price}} €</p>
+        <p><strong>Description:</strong>Delicious....</p>
+        <p><strong>availability:{{val.availability}}</strong>Delicious....</p>
+        <div *ngIf="val.availability">
+            <button routerLink="/home/{{ i }}" class="btn btn-success">Details</button>
+        </div>
+        <div *ngIf="!val.availability">
+            <button (click)="showAlert()" class="btn btn-success">Details</button>
+        </div>
+    </div>
+    <hr />
+</div>
