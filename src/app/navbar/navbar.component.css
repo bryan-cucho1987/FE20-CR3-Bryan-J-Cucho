@@ -1,48 +1,292 @@
-* {
-    padding: 4px;
+ /* * {
+     padding: 4px;
 
-}
+ }
 
-.navbar-brand {
-    margin-left: 5px;
-    gap: 10px;
-}
+ .navbar-brand {
+     margin-left: 5px;
+     gap: 10px;
+ }
 
-.form-control {
-    margin-top: 5px;
-    margin-left: 10px;
-    border-radius: 3px;
-    width: 580px;
-}
+ .form-control {
+     margin-top: 5px;
+     margin-left: 10px;
+     border-radius: 3px;
+     width: 580px;
+ }
 
-.btn {
-    color: whitesmoke;
-    border-radius: 25px;
-    outline-color: brown;
-    background-color: green;
-}
+ .btn {
+     color: whitesmoke;
+     border-radius: 25px;
+     outline-color: brown;
+     background-color: green;
+ }
 
-.card-top {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background: rgba(255, 166, 0, 0.637)e;
-    background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: .25rem;
+ .card-top {
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     min-width: 0;
+     word-wrap: break-word;
+     background: rgba(255, 166, 0, 0.637)e;
+     background-clip: border-box;
+     border: 1px solid rgba(0, 0, 0, 0.2);
+     border-radius: .25rem;
 
-}
+ }
 
-.item {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    margin-left: 155px;
-    padding-top: 10px;
-}
+ .item {
+     display: flex;
+     justify-content: space-around;
+     text-align: center;
+     margin-left: 155px;
+     padding-top: 10px;
+ }
 
-.fas {
-    padding-top: 8px;
-}
+ .fas {
+     padding-top: 8px;
+ }
+
+
+
+ /* Reset and base styles */
+ /** {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ } */
+
+
+ /* Reset and base styles */
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ /* Navbar styles */
+ .navbar {
+     padding: 10px 20px;
+     background-color: #FFD700;
+     /* Yellow background for navbar */
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     /* Ensures items are evenly spaced */
+ }
+
+ .navbar-brand {
+     display: flex;
+     align-items: center;
+     font-size: 40px;
+     gap: 10px;
+     color: #333;
+     text-decoration: none;
+     transition: color 0.3s;
+ }
+
+ .navbar-brand i {
+     font-size: 60px;
+     color: #32CD32;
+     /* Green color for the icon */
+     transition: transform 0.3s;
+ }
+
+ .navbar-brand:hover i {
+     transform: rotate(360deg);
+ }
+
+ .navbar-brand strong {
+     font-size: 50px;
+     color: #32CD32;
+     /* Green color for the text */
+ }
+
+ .form-control {
+     border-radius: 25px;
+     width: 250px;
+     margin-left: 10px;
+     border: 2px solid #32CD32;
+     /* Green border */
+     padding: 5px 10px;
+     transition: border-color 0.3s;
+ }
+
+ .form-control:focus {
+     border-color: #228B22;
+     /* Darker green on focus */
+     outline: none;
+ }
+
+ .btn {
+     color: whitesmoke;
+     border-radius: 25px;
+     background-color: #32CD32;
+     /* Green background for button */
+     border: none;
+     padding: 10px 20px;
+     transition: background-color 0.3s, transform 0.3s;
+ }
+
+ .btn:hover {
+     background-color: #228B22;
+     /* Darker green on hover */
+     transform: scale(1.05);
+ }
+
+ .btn-outline-success {
+     border: 2px solid #32CD32;
+     /* Green border for outline button */
+     color: #32CD32;
+     background-color: transparent;
+     padding: 10px 20px;
+     transition: background-color 0.3s, color 0.3s;
+ }
+
+ .btn-outline-success:hover {
+     background-color: #32CD32;
+     color: whitesmoke;
+ }
+
+ .fas {
+     color: #32CD32;
+     /* Green color for the cart icon */
+     padding-left: 10px;
+     font-size: 33px;
+     transition: transform 0.3s;
+ }
+
+ .fas:hover {
+     transform: scale(1.2);
+ }
+
+ .card-top {
+     background: rgba(255, 166, 0, 0.637);
+     /* Semi-transparent yellow */
+     border: 1px solid rgba(0, 0, 0, 0.2);
+     border-radius: .25rem;
+     padding: 10px;
+     display: flex;
+     flex-wrap: wrap;
+     word-wrap: break-word;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .item {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+     padding: 10px;
+     margin: px;
+ }
+
+ .item h6 {
+     margin-top: 10px;
+     font-size: 16px;
+ }
+
+ .item .btn {
+     font-size: 20px;
+     padding: 10px 20px;
+     margin-top: 5px;
+ }
+
+ /* Image Styles */
+ .icon {
+     font-size: 45px;
+     /* Initial size of bowl icons */
+     color: grey;
+     /* Green color for bowl icons */
+     animation: iconAnimation 2s infinite alternate;
+     /* Apply animation */
+ }
+
+ .navbar-image {
+     max-height: 100px;
+     /* Adjust max height of motorcyclist image */
+     max-width: 100%;
+     /* Ensure image scales proportionally */
+     object-fit: contain;
+     /* Maintain aspect ratio */
+ }
+
+ /* Animation keyframes */
+ @keyframes iconAnimation {
+     0% {
+         font-size: 60px;
+         /* Initial size */
+     }
+
+     100% {
+         font-size: 30px;
+         /* Final size (half of initial size) */
+     }
+ }
+
+ /* Media Queries for responsiveness */
+
+ /* For tablets and below */
+ @media (max-width: 768px) {
+     .navbar {
+         flex-direction: column;
+         /* Stack navbar items vertically */
+         align-items: center;
+     }
+
+     .navbar-brand {
+         font-size: 30px;
+     }
+
+     .form-control {
+         width: 100%;
+         /* Full width for smaller screens */
+     }
+
+     .btn {
+         font-size: 16px;
+         padding: 8px 16px;
+     }
+
+     .card-top {
+         flex-direction: column;
+         /* Stack items vertically */
+     }
+
+     .item {
+         margin: 5px 0;
+         /* Adjust margins */
+     }
+ }
+
+ /* For mobile phones */
+ @media (max-width: 576px) {
+     .navbar-brand {
+         font-size: 24px;
+     }
+
+     .form-control {
+         width: 100%;
+         /* Full width for smaller screens */
+         margin-left: 0;
+         /* Remove left margin */
+     }
+
+     .btn {
+         font-size: 14px;
+         padding: 6px 12px;
+     }
+
+     .item h6 {
+         font-size: 14px;
+     }
+ }
