@@ -5,7 +5,6 @@
         <hr />
         <p><strong>Price:</strong>{{val.price}} €</p>
         <p><strong>Description:</strong>Delicious....</p>
-        <p><strong>availability:{{val.availability}}</strong>Delicious....</p>
         <div *ngIf="val.availability">
             <button routerLink="/home/{{ i }}" class="btn btn-success">Details</button>
         </div>
@@ -13,5 +12,5 @@
             <button (click)="showAlert()" class="btn btn-success">Details</button>
         </div>
     </div>
-    <hr />
+
 </div>

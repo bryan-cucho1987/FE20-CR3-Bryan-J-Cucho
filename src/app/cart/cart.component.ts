@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Iproducts } from '../iproducts';
 import { CartService } from '../cart.service';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-cart',
@@ -22,12 +22,14 @@ export class CartComponent implements OnInit {
     FormBuilder) { }
 
   clearCart() {
-    window.alert("Your cart has been cleared");
+    alert("Your cart has been cleared");
     this.cart = this.CS.clearCart();
   }
 
   onSubmit() {
-    console.warn("Your order has been submitted", this.checkoutForm.value);
+    // alert("Your order has been submitted")
+    alert("Your order has been submitted");
+    this.checkoutForm.value;
     this.cart = this.CS.clearCart();
     this.checkoutForm.reset();
   }
